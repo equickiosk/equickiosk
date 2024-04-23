@@ -1,0 +1,29 @@
+{
+  "name": "kiosk",
+  "version": "1.0.0",
+  "description": "kiosk",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "kiosk",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "bootstrap": "^3.4.1",
+    "escpos": "^3.0.0-alpha.6",
+    "escpos-usb": "^3.0.0-alpha.4",
+    "express": "^4.19.1",
+    "font-awesome": "^4.7.0",
+    "glyphicons": "^0.2.0",
+    "jquery": "^3.7.1",
+    "sqlite3": "^5.1.7",
+    "sweetalert2": "^11.10.7",
+    "usb": "^1.9.2",
+    "nodemon": "^3.1.0"
+  },
+  "overrides": {
+    "usb": "^1.9.2"
+  }
+}
