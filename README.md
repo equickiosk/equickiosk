@@ -1,3 +1,4 @@
+### Create a copy of kiosk-empty.db to kiosk.db
 ### 1. Open the terminal
 ### 2. Plug the thermal printer
 ### 3. Setup the thermal printer
