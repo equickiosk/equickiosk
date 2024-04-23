@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/all.css" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/glyphicons.js"></script>
+    <link rel="stylesheet" href="/css/booking.css" />
+    <script src="/js/sweetalert2.all.min.js"></script>
+    <title>Kiosk</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-links">
+        <ul>
+          <li><a href="/">HOME</a></li>
+          <li><a href="/booking">BOOKING </a></li>
+          <li>
+            <a href="/enrollment">ENROLLMENT</a>
+          </li>
+          <li><a href="/map/is">MAP (IS)</a></li>
+          <li><a href="/map/main">MAP (Main)</a></li>
+          <li><a href="/tutorial">TUTORIAL</a></li>
+          <li>
+            <a href="/registrar">REGISTRAR</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-form">
+      <form id="dataForm">
+        <div class="row">
+          <div class="col">
+            <h3 class="title">RESERVATION</h3>
+
+            <div class="inputBox">
+              <span>First Name:</span>
+              <input type="text" name="first_name" />
+            </div>
+
+            <div class="inputBox">
+              <span>Last Name:</span>
+              <input type="text" name="last_name" />
+            </div>
+
+            <div class="inputBox">
+              <span>Contact Number:</span>
+              <input type="text" name="contact_number" />
+            </div>
+
+            <div class="inputBox">
+              <span>Email:</span>
+              <input type="text" name="email" />
+            </div>
+
+            <div class="flex">
+              <div class="Department">
+                <span>Department:</span>
+                <select name="department">
+                  <option value="OSD">OSD</option>
+                  <option value="VICE PRINCIPAL">VICE PRINCIPAL</option>
+                  <option value="GUIDANCE OFFICE">GUIDANCE OFFICE</option>
+                  <option value="PRINCIPAL OFFICE">PRINCIPAL OFFICE</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <h3 class="title">AVAILABLE SCHEDULE</h3>
+
+            <div class="Department">
+              <span>Principal Schedule:</span>
+              <select name="principal_schedule">
+                <option value="MONDAY 7AM-10AM">MONDAY 7AM-10AM</option>
+                <option value="TUESDAY 7AM-10AM">TUESDAY 7AM-10AM</option>
+                <option value="FRIDAY 7AM-10AM">FRIDAY 7AM-10AM</option>
+              </select>
+            </div>
+
+            <div class="Department">
+              <span>Vice Principal Schedule:</span>
+              <select name="vice_principal_schedule">
+                <option value="MONDAY 7AM-10AM">MONDAY 7AM-10AM</option>
+                <option value="TUESDAY 7AM-10AM">TUESDAY 7AM-10AM</option>
+                <option value="FRIDAY 7AM-10AM">FRIDAY 7AM-10AM</option>
+              </select>
+            </div>
+
+            <div class="Department">
+              <span>Guidance Office Schedule:</span>
+              <select name="guidance_office_schedule">
+                <option value="MONDAY 7AM-10AM">MONDAY 7AM-10AM</option>
+                <option value="TUESDAY 7AM-10AM">TUESDAY 7AM-10AM</option>
+                <option value="FRIDAY 7AM-10AM">FRIDAY 7AM-10AM</option>
+              </select>
+            </div>
+
+            <div class="Department">
+              <span>OSD Schedule:</span>
+              <select name="osd_schedule">
+                <option value="MONDAY 7AM-10AM">MONDAY 7AM-10AM</option>
+                <option value="TUESDAY 7AM-10AM">TUESDAY 7AM-10AM</option>
+                <option value="FRIDAY 7AM-10AM">FRIDAY 7AM-10AM</option>
+              </select>
+              <div class="privacy2">
+                <label class="privacy2"> 
+                  <p>I hereby acknowledge that, by clicking the submit button below, 
+                    I am fully permitting the institution to gather and keep any personal information I may submit. 
+                    I am aware of the rights defined in the Data Privacy Act of 2012.</p>
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+                </label>
+  
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+        <button type="submit" class="submit-btn">SUBMIT</button>
+      </form>
+    </div>
+    <script src="/js/booking.js"></script>
+  </body>
+</html>

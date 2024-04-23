@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/all.css" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/glyphicons.js"></script>
+    <link rel="stylesheet" href="/css/registrar.css" />
+    <script src="/js/sweetalert2.all.min.js"></script>
+    <title>Kiosk</title>
+  </head>
+  <body>
+    
+    <div class="container-form">
+      <div class="title">FILL-IN</div>
+      <div class="content">
+        <form id="registrationForm">
+          <div class="user-details">
+            <div class="input-box">
+              <label for="fullName" class="details">Full Name</label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="userName" class="details">Username</label>
+              <input
+                type="text"
+                id="userName"
+                name="userName"
+                placeholder="Enter your username"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="email" class="details">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="gradeAndSection" class="details"
+                >Grade and Section</label
+              >
+              <input
+                type="text"
+                id="gradeAndSection"
+                name="gradeAndSection"
+                placeholder="Enter your number"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="purpose" class="details">Purpose</label>
+              <input
+                type="text"
+                id="purpose"
+                name="purpose"
+                placeholder="Enter your purpose"
+                required
+              />
+            </div>
+            <!-- <div class="input-box">
+              <label for="dateToday" class="details">Date Today</label>
+              <input type="date" id="dateToday" name="dateToday" required />
+            </div> -->
+          </div>
+          <div class="form">
+            <input type="radio" name="form" id="form-1" />
+            <input type="radio" name="form" id="form-2" />
+            <input type="radio" name="form" id="form-3" />
+            <span class="form-title">REQUIREMENTS TO BE COLLECTED</span>
+            <div class="category">
+              <label for="form-1">
+                <select name="CARD">
+                  <option value="sf9">SF9</option>
+                  <option value="sf10">SF10</option>
+                  <option value="sf11">SF11</option>
+                  <option value="NONE">NONE</option>
+                </select>
+              </label>
+              <label for="form-2">
+                <select name="CREDENTIALS">
+                  <option value="BIRTHCERTIFICATE">BIRTH CERTIFICATE</option>
+                  <option value="GOOD MORAL">GOOD MORAL</option>
+                  <option value="DIPLOMA">DIPLOMA</option>
+                  <option value="NONE">NONE</option>
+                </select>
+              </label>
+              <label for="form-3">
+                <div class="input-box">
+                  <input
+                    type="text"
+                    id="otherInput"
+                    name="otherInput"
+                    placeholder="OTHERS"
+                    required
+                  />
+                </div>
+              </label> 
+            </div>
+            <div class="privacy2">
+              <label class="privacy2"> 
+                <p>I hereby acknowledge that, by clicking the submit button below, 
+                  I am fully permitting the institution to gather and keep any personal information I may submit. 
+                  I am aware of the rights defined in the Data Privacy Act of 2012.</p>
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+          </div>
+
+          <div class="button">
+            <input type="button" id="cancelButton" value="CANCEL" />
+          </div>
+
+          <div class="button">
+            <input type="submit" value="PRINT" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="/js/registrar.js"></script>
+  </body>
+</html>
