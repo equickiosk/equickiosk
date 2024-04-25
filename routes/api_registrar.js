@@ -167,12 +167,14 @@ async function deleteByIdAsync(id) {
 
 function thermalPrint(row) {
   try {
+    console.log("Printing");
+    console.log(`ID: ${row.Id}`);
+    console.log(`Window Number: ${getWindowNumber(row.Id)}`);
     const escpos = require("escpos");
     escpos.USB = require("escpos-usb");
     const device = new escpos.USB();
     const options = { encoding: "GB18030" /* default */ };
     const printer = new escpos.Printer(device, options);
-    console.log('Printing');
     device.open(function (error) {
       printer
         .font("a")
@@ -180,14 +182,7 @@ function thermalPrint(row) {
         .style("normal")
         .size(1, 1)
         .text(`ID: ${row.Id}`)
-        .text(`Full Name: ${row.FullName}`)
-        .text(`Email: ${row.Email}`)
-        .text(`Grade and Section: ${row.GradeAndSection}`)
-        .text(`Purpose: ${row.Purpose}`)
-        .text(`Card: ${row.Card}`)
-        .text(`Forms: ${row.Forms}`)
-        .text(`Others: ${row.Others}`)
-        .text(`Date Registered: ${row.DateRegistered}`)
+        .text(`Window Number: ${getWindowNumber(row.Id)}`)
         .cut()
         .close();
     });
@@ -195,6 +190,14 @@ function thermalPrint(row) {
     console.log(ex);
     console.error(`Error printing: ${ex.message}`);
     return false;
+  }
+}
+
+function getWindowNumber(n) {
+  if (n === 4) {
+    return 1;
+  } else {
+    return n % 3 || 3;
   }
 }
 
